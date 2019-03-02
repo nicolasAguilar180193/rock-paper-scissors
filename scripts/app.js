@@ -28,16 +28,23 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   result_p.innerHTML = `${converToWord(userChoice)} beats ${converToWord(computerChoice)} .You win!!`;
+  document.getElementById(userChoice).classList.add('green-glow');
+  setTimeout(function(){document.getElementById(userChoice).classList.remove('green-glow');}, 1000);
 }
+
 
 function lose(userChoice, computerChoice) {
   computerScore++;
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${converToWord(computerChoice)} beats ${converToWord(userChoice)} .You lost...`;
+  document.getElementById(userChoice).classList.add('red-glow');
+  setTimeout(function(){document.getElementById(userChoice).classList.remove('red-glow');}, 1000);
 }
 
 function draw(userChoice, computerChoice) {
   result_p.innerHTML = `${converToWord(computerChoice)} equals ${converToWord(userChoice)} .It's a draw.`;
+  document.getElementById(userChoice).classList.add('gray-glow');
+  setTimeout(function(){document.getElementById(userChoice).classList.remove('gray-glow');}, 1000);
 }
 
 function game(userChoice){
