@@ -5,4 +5,4 @@
 
   You can see how it looks in the following link :
 
-  https://nicolasthedoors2014.github.io/rock-paper-scissors/
+  https://nicolasaguilar180193.github.io/rock-paper-scissors/
